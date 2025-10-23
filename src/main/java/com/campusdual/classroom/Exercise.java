@@ -2,8 +2,7 @@ package com.campusdual.classroom;
 
 public class Exercise {
 
-    public static void main(String[] args) {
-        doWhileLoop(10);
+    public static void main(String[] args) {doWhileLoop(10);
     }
 
     // Comprueba el funcionamiento del bucle do-while, que para cada interacción muestre el siguiente mensaje:
@@ -11,6 +10,11 @@ public class Exercise {
     // Entra con valor: X+1, sale con valor: X+2;
     // etc.
     public static void doWhileLoop(int num) {
-
+        int X = 0;
+        do {
+            System.out.print("Entra con valor: " + X);
+            X++;
+            System.out.println("," + " sale con valor: " + X);
+        } while (X < num);
     }
 }
